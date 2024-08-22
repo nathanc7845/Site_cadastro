@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Mine';
+    src: url('Minecraft.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: linear-gradient(to right, black, blue);
+
+}
+
+h1 {
+    font-family: 'Mine', 'Times', serif;
+    font-size: 3em;
+    color: white;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.button1 {
+    padding: 25px 50px;
+    background-color: white;
+    color: black;
+    border-radius: 120px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.button1 span {
+    font-size: 20px;
+    position: relative;
+}
+
+.button1::before {
+    content: '';
+    background-color: red;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: var('--eixoY');
+    left: var('--eixoX');
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .5s, height .5s;
+}
+
+.button1:hover::before {
+    width: 1000px;
+    height: 1000px;
+}
+
+
+
+.button2 {
+    padding: 25px 50px;
+    background-color: white;
+    color: black;
+    border-radius: 120px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.button2 span {
+    font-size: 20px;
+    position: relative;
+}
+
+.button2::before {
+    content: '';
+    background-color: yellow;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: var('--eixoY');
+    left: var('--eixoX');
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .5s, height .5s;
+}
+
+.button2:hover::before {
+    width: 1000px;
+    height: 1000px;
+}
+
+
+
+
+
+
+
+.loginn {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    margin-right: 250px;
+}
+
+.cadastro {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -70px;
+    margin-left: 200px;
+
+}
